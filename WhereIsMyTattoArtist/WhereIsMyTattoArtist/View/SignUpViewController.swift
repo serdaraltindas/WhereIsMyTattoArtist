@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
             charIndex += 1
         }
         //label rectangle
-        let myView = DrawRectangle(frame: CGRect(x: 5, y: 85, width: 385, height: 150))
+        let myView = DrawRectangle(frame: CGRect(x: 5, y: 665, width: 385, height: 150))
         myView.backgroundColor = .clear
         self.view.addSubview(myView)
         

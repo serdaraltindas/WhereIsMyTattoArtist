@@ -1,14 +1,7 @@
-//
-//  WelcomeViewController.swift
-//  WhereIsMyTattoArtist
-//
-//  Created by Serdar Altındaş on 27.04.2023.
-//
-
 import UIKit
 
 class LogInViewController: UIViewController {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
@@ -25,9 +18,28 @@ class LogInViewController: UIViewController {
             }
             charIndex += 1
         }
+        //label rectangle
+        let myView = DrawRectangle(frame: CGRect(x: 5, y: 85, width: 385, height: 150))
+        myView.backgroundColor = .clear
+        self.view.addSubview(myView)
         
     }
-
-    
-
+    //label rectangle
+    class DrawRectangle: UIView {
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+        }
+        required public init?(coder aDecoder: NSCoder) {
+            super.init(coder: aDecoder)
+        }
+        override func draw(_ rect: CGRect) {
+            guard let context = UIGraphicsGetCurrentContext() else {
+                print("could not get graphics context")
+                return
+            }
+            context.setStrokeColor(UIColor.white.cgColor)
+            context.setLineWidth(2)
+            context.stroke(rect.insetBy(dx: 10, dy: 10))
+        }
+    }
 }

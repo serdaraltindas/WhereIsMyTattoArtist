@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WelcomeViewController.swift
 //  WhereIsMyTattoArtist
 //
 //  Created by Serdar Altındaş on 27.04.2023.
@@ -7,13 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LogInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
     }
 
+    
 
 }
-

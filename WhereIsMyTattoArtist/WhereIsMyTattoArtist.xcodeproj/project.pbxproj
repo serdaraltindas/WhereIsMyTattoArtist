@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AEC3751E29FAD8C900981956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751D29FAD8C900981956 /* AppDelegate.swift */; };
 		AEC3752029FAD8C900981956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751F29FAD8C900981956 /* SceneDelegate.swift */; };
-		AEC3752229FAD8C900981956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3752129FAD8C900981956 /* ViewController.swift */; };
+		AEC3752229FAD8C900981956 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3752129FAD8C900981956 /* WelcomeViewController.swift */; };
 		AEC3752529FAD8C900981956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3752329FAD8C900981956 /* Main.storyboard */; };
 		AEC3752729FAD8CA00981956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC3752629FAD8CA00981956 /* Assets.xcassets */; };
 		AEC3752A29FAD8CA00981956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC3752829FAD8CA00981956 /* LaunchScreen.storyboard */; };
+		AEC3753629FAE6B100981956 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3753529FAE6B100981956 /* LogInViewController.swift */; };
+		AEC3753829FAE6F900981956 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3753729FAE6F900981956 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AEC3751A29FAD8C900981956 /* WhereIsMyTattoArtist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyTattoArtist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3751D29FAD8C900981956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3751F29FAD8C900981956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEC3752129FAD8C900981956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC3752129FAD8C900981956 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		AEC3752429FAD8C900981956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEC3752629FAD8CA00981956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC3752929FAD8CA00981956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC3752B29FAD8CA00981956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEC3753529FAE6B100981956 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		AEC3753729FAE6F900981956 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,9 @@
 		AEC3753229FAD8E200981956 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AEC3752129FAD8C900981956 /* ViewController.swift */,
+				AEC3752129FAD8C900981956 /* WelcomeViewController.swift */,
+				AEC3753529FAE6B100981956 /* LogInViewController.swift */,
+				AEC3753729FAE6F900981956 /* SignUpViewController.swift */,
 				AEC3752329FAD8C900981956 /* Main.storyboard */,
 			);
 			path = View;
@@ -170,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC3752229FAD8C900981956 /* ViewController.swift in Sources */,
+				AEC3752229FAD8C900981956 /* WelcomeViewController.swift in Sources */,
+				AEC3753629FAE6B100981956 /* LogInViewController.swift in Sources */,
 				AEC3751E29FAD8C900981956 /* AppDelegate.swift in Sources */,
 				AEC3752029FAD8C900981956 /* SceneDelegate.swift in Sources */,
+				AEC3753829FAE6F900981956 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-QM-EPr">
-                                <rect key="frame" x="16" y="637" width="361" height="68"/>
+                                <rect key="frame" x="16" y="714" width="361" height="68"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Kayıt Ol" cornerStyle="capsule">
                                     <backgroundConfiguration key="background" image="background2" imageContentMode="center" strokeWidth="3" strokeOutset="0.0">
@@ -36,9 +36,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZv-K5-HAO">
-                                <rect key="frame" x="16" y="561" width="361" height="68"/>
+                                <rect key="frame" x="16" y="638" width="361" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="Vgm-ig-ntK"/>
+                                    <constraint firstAttribute="height" constant="68" id="rCK-54-rd7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Giriş Yap" cornerStyle="capsule">
@@ -57,17 +57,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="YZv-K5-HAO" firstAttribute="leading" secondItem="b8A-QM-EPr" secondAttribute="leading" id="BUl-Ht-wra"/>
-                            <constraint firstItem="YZv-K5-HAO" firstAttribute="trailing" secondItem="b8A-QM-EPr" secondAttribute="trailing" id="EL4-df-AFf"/>
-                            <constraint firstItem="YZv-K5-HAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MuH-ds-szy"/>
-                            <constraint firstItem="YZv-K5-HAO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V4Y-yi-OOs"/>
-                            <constraint firstItem="rtl-4b-LNy" firstAttribute="centerX" secondItem="YZv-K5-HAO" secondAttribute="centerX" id="YLz-Xm-j8T"/>
-                            <constraint firstItem="rtl-4b-LNy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aXG-pl-m8s"/>
-                            <constraint firstItem="b8A-QM-EPr" firstAttribute="top" secondItem="YZv-K5-HAO" secondAttribute="bottom" constant="8" id="dwd-uy-6U7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b8A-QM-EPr" secondAttribute="bottom" constant="113" id="esY-O1-4Hj"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="rtl-4b-LNy" secondAttribute="bottom" constant="-34" id="q7R-H1-kZh"/>
-                            <constraint firstItem="rtl-4b-LNy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rdm-w1-HsQ"/>
-                            <constraint firstItem="YZv-K5-HAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="458" id="zoA-Ug-G3e"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rtl-4b-LNy" secondAttribute="bottom" constant="-34" id="55T-gr-TT1"/>
+                            <constraint firstItem="rtl-4b-LNy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MAa-i2-V1X"/>
+                            <constraint firstItem="rtl-4b-LNy" firstAttribute="centerX" secondItem="YZv-K5-HAO" secondAttribute="centerX" id="OEO-ut-tzo"/>
+                            <constraint firstItem="b8A-QM-EPr" firstAttribute="top" secondItem="YZv-K5-HAO" secondAttribute="bottom" constant="8" id="OQJ-Az-RhH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b8A-QM-EPr" secondAttribute="bottom" constant="36" id="Vwh-CK-dh4"/>
+                            <constraint firstItem="YZv-K5-HAO" firstAttribute="leading" secondItem="b8A-QM-EPr" secondAttribute="leading" id="ayF-RZ-jNk"/>
+                            <constraint firstItem="rtl-4b-LNy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bGs-UP-yhz"/>
+                            <constraint firstItem="YZv-K5-HAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dyv-WB-hHl"/>
+                            <constraint firstItem="YZv-K5-HAO" firstAttribute="trailing" secondItem="b8A-QM-EPr" secondAttribute="trailing" id="eqT-v8-HMJ"/>
+                            <constraint firstItem="YZv-K5-HAO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kfN-NF-gAe"/>
+                            <constraint firstItem="YZv-K5-HAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="535" id="rEn-cx-8zF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I7a-xs-wQX"/>
@@ -91,14 +91,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="Oks-dH-rQ1">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-cD-4SN">
+                                <rect key="frame" x="16" y="714" width="361" height="68"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Kayıt Ol" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" image="background2" imageContentMode="center" strokeWidth="3" strokeOutset="0.0">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayıtOlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYU-e7-Mx6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z4V-f9-kyh"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="leading" secondItem="Z4V-f9-kyh" secondAttribute="leading" id="7bs-u1-42b"/>
-                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="centerX" secondItem="Dbe-3x-Gmq" secondAttribute="centerX" id="LII-wB-MCR"/>
-                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="centerY" secondItem="Dbe-3x-Gmq" secondAttribute="centerY" id="jP3-q4-6VP"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="Oks-dH-rQ1" secondAttribute="bottom" constant="-34" id="uAC-YV-oZb"/>
+                            <constraint firstItem="aRW-cD-4SN" firstAttribute="top" secondItem="Z4V-f9-kyh" secondAttribute="top" constant="611" id="1SB-TR-mMG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Oks-dH-rQ1" secondAttribute="bottom" constant="-34" id="3g9-Pd-qEt"/>
+                            <constraint firstItem="aRW-cD-4SN" firstAttribute="leading" secondItem="Dbe-3x-Gmq" secondAttribute="leadingMargin" id="52n-8t-thN"/>
+                            <constraint firstItem="aRW-cD-4SN" firstAttribute="trailing" secondItem="Dbe-3x-Gmq" secondAttribute="trailingMargin" id="Cze-qi-BZ1"/>
+                            <constraint firstItem="Z4V-f9-kyh" firstAttribute="bottom" secondItem="aRW-cD-4SN" secondAttribute="bottom" constant="36" id="FQi-jx-L0V"/>
+                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="centerX" secondItem="aRW-cD-4SN" secondAttribute="centerX" id="VTa-0k-TVQ"/>
+                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="centerY" secondItem="Dbe-3x-Gmq" secondAttribute="centerY" id="gQQ-yQ-hJh"/>
+                            <constraint firstItem="Oks-dH-rQ1" firstAttribute="leading" secondItem="Z4V-f9-kyh" secondAttribute="leading" id="xkg-sQ-NOO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8u7-QP-77P"/>
@@ -155,14 +175,33 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ynv-2k-TlD">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8di-U8-9ow">
+                                <rect key="frame" x="16" y="714" width="361" height="68"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Giriş Yap" cornerStyle="capsule">
+                                    <backgroundConfiguration key="background" image="background2" imageContentMode="center" strokeWidth="3">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Impact" family="Impact" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="girisYapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upN-dx-lmF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jBB-kO-Fxy"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ynv-2k-TlD" firstAttribute="leading" secondItem="jBB-kO-Fxy" secondAttribute="leading" id="3ZC-tb-Y0b"/>
-                            <constraint firstItem="ynv-2k-TlD" firstAttribute="centerX" secondItem="Wrn-76-btg" secondAttribute="centerX" id="5GU-Ha-Xmi"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ynv-2k-TlD" secondAttribute="bottom" constant="-34" id="Mk7-56-Fbi"/>
-                            <constraint firstItem="ynv-2k-TlD" firstAttribute="centerY" secondItem="Wrn-76-btg" secondAttribute="centerY" id="N5F-uO-bth"/>
+                            <constraint firstItem="8di-U8-9ow" firstAttribute="top" secondItem="jBB-kO-Fxy" secondAttribute="top" constant="611" id="6bo-sD-Wj8"/>
+                            <constraint firstItem="8di-U8-9ow" firstAttribute="leading" secondItem="Wrn-76-btg" secondAttribute="leadingMargin" id="EM6-PX-N8T"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ynv-2k-TlD" secondAttribute="bottom" constant="-34" id="PWC-OC-UgF"/>
+                            <constraint firstItem="8di-U8-9ow" firstAttribute="trailing" secondItem="Wrn-76-btg" secondAttribute="trailingMargin" id="PjS-AK-2gn"/>
+                            <constraint firstItem="ynv-2k-TlD" firstAttribute="centerY" secondItem="Wrn-76-btg" secondAttribute="centerY" id="UxK-Ct-tT1"/>
+                            <constraint firstItem="jBB-kO-Fxy" firstAttribute="bottom" secondItem="8di-U8-9ow" secondAttribute="bottom" constant="36" id="Xuf-2T-KaJ"/>
+                            <constraint firstItem="ynv-2k-TlD" firstAttribute="centerX" secondItem="8di-U8-9ow" secondAttribute="centerX" id="ZRu-k2-dNs"/>
+                            <constraint firstItem="ynv-2k-TlD" firstAttribute="leading" secondItem="jBB-kO-Fxy" secondAttribute="leading" id="hkV-CO-1ye"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ve9-KZ-RUQ"/>

@@ -6,7 +6,10 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Back button color
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        
         //label animation
         titleLabel.text = ""
         var charIndex = 0.0
@@ -21,7 +24,6 @@ class SignUpViewController: UIViewController {
         let myView = DrawRectangle(frame: CGRect(x: 5, y: 665, width: 385, height: 150))
         myView.backgroundColor = .clear
         self.view.addSubview(myView)
-        
     }
     //label rectangle
     class DrawRectangle: UIView {
@@ -37,7 +39,7 @@ class SignUpViewController: UIViewController {
                 return
             }
             context.setStrokeColor(UIColor.white.cgColor)
-            context.setLineWidth(2)
+            context.setLineWidth(5)
             context.stroke(rect.insetBy(dx: 10, dy: 10))
         }
     }

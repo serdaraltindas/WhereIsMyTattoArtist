@@ -37,7 +37,7 @@ class WelcomeViewController: UIViewController {
                 return
             }
             context.setStrokeColor(UIColor.white.cgColor)
-            context.setLineWidth(2)
+            context.setLineWidth(5)
             context.stroke(rect.insetBy(dx: 10, dy: 10))
         }
     }

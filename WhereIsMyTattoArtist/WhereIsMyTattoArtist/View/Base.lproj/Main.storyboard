@@ -172,6 +172,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8u7-QP-77P"/>
                     <connections>
+                        <outlet property="titleLabel" destination="tQj-dG-at2" id="Qrk-Wl-AW3"/>
                         <segue destination="OVp-Cs-0ht" kind="presentation" modalPresentationStyle="fullScreen" id="FB2-oe-vPI"/>
                     </connections>
                 </viewController>
@@ -288,6 +289,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ve9-KZ-RUQ"/>
                     <connections>
+                        <outlet property="titleLabel" destination="2rX-D1-WYE" id="d7y-6b-Ezs"/>
                         <segue destination="OVp-Cs-0ht" kind="presentation" modalPresentationStyle="fullScreen" id="VZs-xj-7Bu"/>
                     </connections>
                 </viewController>
@@ -334,7 +336,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VZs-xj-7Bu"/>
+        <segue reference="FB2-oe-vPI"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="3500" height="5881"/>

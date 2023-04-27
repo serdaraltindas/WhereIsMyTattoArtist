@@ -1,5 +1,3 @@
-
-
 import UIKit
 
 class WelcomeViewController: UIViewController {
@@ -8,6 +6,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //label animation
         titleLabel.text = ""
         var charIndex = 0.0

@@ -188,8 +188,27 @@
                     <view key="view" contentMode="scaleToFill" id="ykb-ZQ-TLI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="417-ZH-tE6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BPg-8b-eqX">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bT7-cY-0fv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bT7-cY-0fv" firstAttribute="bottom" secondItem="417-ZH-tE6" secondAttribute="bottom" id="038-S0-15x"/>
+                            <constraint firstItem="417-ZH-tE6" firstAttribute="top" secondItem="bT7-cY-0fv" secondAttribute="top" id="Fqb-Ab-emN"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="top" secondItem="bT7-cY-0fv" secondAttribute="top" id="Ng8-6a-8xu"/>
+                            <constraint firstItem="bT7-cY-0fv" firstAttribute="trailing" secondItem="BPg-8b-eqX" secondAttribute="trailing" id="S6L-Lx-jbL"/>
+                            <constraint firstItem="bT7-cY-0fv" firstAttribute="bottom" secondItem="BPg-8b-eqX" secondAttribute="bottom" id="VoO-d1-qmm"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="leading" secondItem="bT7-cY-0fv" secondAttribute="leading" id="hYA-05-JgR"/>
+                            <constraint firstItem="bT7-cY-0fv" firstAttribute="trailing" secondItem="417-ZH-tE6" secondAttribute="trailing" id="zL6-RO-eWw"/>
+                            <constraint firstItem="417-ZH-tE6" firstAttribute="leading" secondItem="bT7-cY-0fv" secondAttribute="leading" id="zWI-dk-vKN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="EfS-lK-S4W" kind="presentation" modalPresentationStyle="fullScreen" id="6FT-LB-CgM"/>

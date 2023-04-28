@@ -88,8 +88,8 @@
 				AEC3752129FAD8C900981956 /* WelcomeViewController.swift */,
 				AEC3753529FAE6B100981956 /* LogInViewController.swift */,
 				AEC3753729FAE6F900981956 /* SignUpViewController.swift */,
-				AEC3752329FAD8C900981956 /* Main.storyboard */,
 				AE7E1EE829FC626A00454569 /* TableViewController.swift */,
+				AEC3752329FAD8C900981956 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -44,4 +44,10 @@ class LogInViewController: UIViewController {
             context.stroke(rect.insetBy(dx: 10, dy: 10))
         }
     }
+    
+    @IBAction func logInButtonClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "logInToTableView", sender: self)
+        
+    }
+    
 }

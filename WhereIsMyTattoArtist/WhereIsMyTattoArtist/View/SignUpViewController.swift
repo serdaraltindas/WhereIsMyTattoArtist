@@ -43,4 +43,9 @@ class SignUpViewController: UIViewController {
             context.stroke(rect.insetBy(dx: 10, dy: 10))
         }
     }
+    
+    @IBAction func signUpButtonClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "signUpToTableView", sender: self)
+    }
+    
 }

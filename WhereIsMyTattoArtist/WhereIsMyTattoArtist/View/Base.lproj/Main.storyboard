@@ -124,6 +124,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="kayıtOlButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYU-e7-Mx6"/>
+                                    <action selector="signUpButtonClicked:" destination="9T1-6g-fTg" eventType="touchUpInside" id="Ywb-61-21h"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-Jp-sQH">
@@ -173,7 +174,7 @@
                     <navigationItem key="navigationItem" id="8u7-QP-77P"/>
                     <connections>
                         <outlet property="titleLabel" destination="tQj-dG-at2" id="Qrk-Wl-AW3"/>
-                        <segue destination="OVp-Cs-0ht" kind="presentation" modalPresentationStyle="fullScreen" id="FB2-oe-vPI"/>
+                        <segue destination="OVp-Cs-0ht" kind="presentation" identifier="signUpToTableView" modalPresentationStyle="fullScreen" id="FB2-oe-vPI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vqm-0F-v1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -241,6 +242,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="girisYapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="upN-dx-lmF"/>
+                                    <action selector="logInButtonClicked:" destination="Rxh-uF-blv" eventType="touchUpInside" id="Btq-Te-ZvN"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SW9-MY-De6">
@@ -290,7 +292,7 @@
                     <navigationItem key="navigationItem" id="Ve9-KZ-RUQ"/>
                     <connections>
                         <outlet property="titleLabel" destination="2rX-D1-WYE" id="d7y-6b-Ezs"/>
-                        <segue destination="OVp-Cs-0ht" kind="presentation" modalPresentationStyle="fullScreen" id="VZs-xj-7Bu"/>
+                        <segue destination="OVp-Cs-0ht" kind="presentation" identifier="logInToTableView" modalPresentationStyle="fullScreen" id="VZs-xj-7Bu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3l-ma-UMJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

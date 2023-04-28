@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE7E1EE929FC626A00454569 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E1EE829FC626A00454569 /* TableViewController.swift */; };
+		AE7E1EEB29FC683200454569 /* IstanbulArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E1EEA29FC683200454569 /* IstanbulArea.swift */; };
 		AEC3751E29FAD8C900981956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751D29FAD8C900981956 /* AppDelegate.swift */; };
 		AEC3752029FAD8C900981956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751F29FAD8C900981956 /* SceneDelegate.swift */; };
 		AEC3752229FAD8C900981956 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3752129FAD8C900981956 /* WelcomeViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		AE7E1EE829FC626A00454569 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AE7E1EEA29FC683200454569 /* IstanbulArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IstanbulArea.swift; sourceTree = "<group>"; };
 		AEC3751A29FAD8C900981956 /* WhereIsMyTattoArtist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyTattoArtist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC3751D29FAD8C900981956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC3751F29FAD8C900981956 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		AEC3753329FAD90500981956 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AE7E1EEA29FC683200454569 /* IstanbulArea.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				AE7E1EE929FC626A00454569 /* TableViewController.swift in Sources */,
 				AEC3753629FAE6B100981956 /* LogInViewController.swift in Sources */,
 				AEC3751E29FAD8C900981956 /* AppDelegate.swift in Sources */,
+				AE7E1EEB29FC683200454569 /* IstanbulArea.swift in Sources */,
 				AEC3752029FAD8C900981956 /* SceneDelegate.swift in Sources */,
 				AEC3753829FAE6F900981956 /* SignUpViewController.swift in Sources */,
 			);

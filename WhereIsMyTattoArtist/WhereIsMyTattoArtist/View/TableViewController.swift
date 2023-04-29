@@ -34,7 +34,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return "Tatto İstanbul"
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 160
     }
     
 

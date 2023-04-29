@@ -26,8 +26,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.customImageView.clipsToBounds = true
         cell.customImageView.layer.borderWidth = 5
         cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
-        cell.customImageView.clipsToBounds = true
-        
         return cell
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

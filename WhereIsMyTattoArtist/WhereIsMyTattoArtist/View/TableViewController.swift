@@ -24,7 +24,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.customImageView.layer.cornerRadius = cell.customImageView.frame.size.width / 5
         cell.customImageView.layer.masksToBounds = true
         cell.customImageView.clipsToBounds = true
-        cell.customImageView.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+        cell.customImageView.layer.borderWidth = 5
+        cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
+        cell.customImageView.clipsToBounds = true
         
         return cell
     }
@@ -34,5 +36,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
+    
 
 }

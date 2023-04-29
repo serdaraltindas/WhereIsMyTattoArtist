@@ -56,7 +56,7 @@
                                     <action selector="girisYapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYm-LX-KZm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-Qj-6XW">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hug-Qj-6XW">
                                 <rect key="frame" x="29" y="103" width="335" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="5Ps-bR-59J"/>
@@ -139,7 +139,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQj-dG-at2">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQj-dG-at2">
                                 <rect key="frame" x="29" y="678" width="335" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="ngI-cS-wRq"/>
@@ -192,25 +192,64 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="417-ZH-tE6">
                                 <rect key="frame" x="-28" y="-100" width="456" height="1063"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1063" id="6MK-Jj-7Lb"/>
+                                    <constraint firstAttribute="height" constant="1063" id="dU1-o8-8Rr"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="BPg-8b-eqX">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="172" id="39D-Ch-hcu" customClass="CustomTableViewCell" customModule="WhereIsMyTattoArtist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="172"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="39D-Ch-hcu" id="wz8-oj-ly9">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="172"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-w6-Kch">
+                                                    <rect key="frame" x="20" y="22" width="174" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="174" id="Rcw-fI-fZd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbS-v0-ndj">
+                                                    <rect key="frame" x="202" y="22" width="171" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="171" id="gfK-za-nXG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yjo-w6-Kch" firstAttribute="bottom" secondItem="tbS-v0-ndj" secondAttribute="bottom" id="CIc-hX-EV7"/>
+                                                <constraint firstItem="Yjo-w6-Kch" firstAttribute="top" secondItem="tbS-v0-ndj" secondAttribute="top" id="MQT-cG-9L3"/>
+                                                <constraint firstItem="Yjo-w6-Kch" firstAttribute="centerY" secondItem="wz8-oj-ly9" secondAttribute="centerY" id="Vz2-V5-tlU"/>
+                                                <constraint firstItem="tbS-v0-ndj" firstAttribute="leading" secondItem="Yjo-w6-Kch" secondAttribute="trailing" constant="8" id="gBn-BT-dbQ"/>
+                                                <constraint firstItem="Yjo-w6-Kch" firstAttribute="leading" secondItem="wz8-oj-ly9" secondAttribute="leadingMargin" id="rDD-va-fco"/>
+                                                <constraint firstItem="Yjo-w6-Kch" firstAttribute="top" secondItem="wz8-oj-ly9" secondAttribute="topMargin" constant="11" id="sgT-sK-4eZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="customImageView" destination="Yjo-w6-Kch" id="NVx-Gh-Fzk"/>
+                                            <outlet property="customLabel" destination="tbS-v0-ndj" id="2Wc-yS-Qmg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bT7-cY-0fv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="417-ZH-tE6" firstAttribute="leading" secondItem="ykb-ZQ-TLI" secondAttribute="leadingMargin" constant="-44" id="49h-6q-iEL"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="417-ZH-tE6" secondAttribute="trailing" constant="-51" id="4AI-Ts-fSD"/>
-                            <constraint firstItem="417-ZH-tE6" firstAttribute="top" secondItem="ykb-ZQ-TLI" secondAttribute="top" constant="-100" id="GFE-6I-NKm"/>
-                            <constraint firstItem="BPg-8b-eqX" firstAttribute="top" secondItem="bT7-cY-0fv" secondAttribute="top" id="Ng8-6a-8xu"/>
-                            <constraint firstItem="bT7-cY-0fv" firstAttribute="trailing" secondItem="BPg-8b-eqX" secondAttribute="trailing" id="S6L-Lx-jbL"/>
-                            <constraint firstItem="bT7-cY-0fv" firstAttribute="bottom" secondItem="BPg-8b-eqX" secondAttribute="bottom" id="VoO-d1-qmm"/>
-                            <constraint firstItem="BPg-8b-eqX" firstAttribute="leading" secondItem="bT7-cY-0fv" secondAttribute="leading" id="hYA-05-JgR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="417-ZH-tE6" secondAttribute="trailing" constant="-51" id="I9t-gU-PxH"/>
+                            <constraint firstItem="417-ZH-tE6" firstAttribute="leading" secondItem="ykb-ZQ-TLI" secondAttribute="leadingMargin" constant="-44" id="UnZ-M8-qh1"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="centerX" secondItem="ykb-ZQ-TLI" secondAttribute="centerX" id="a7F-PK-mEa"/>
+                            <constraint firstItem="417-ZH-tE6" firstAttribute="top" secondItem="ykb-ZQ-TLI" secondAttribute="top" constant="-100" id="bC7-Xi-Gi3"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="leading" secondItem="bT7-cY-0fv" secondAttribute="leading" id="haG-5Q-WfD"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="top" secondItem="bT7-cY-0fv" secondAttribute="top" id="pGp-qc-bTC"/>
+                            <constraint firstItem="BPg-8b-eqX" firstAttribute="bottom" secondItem="bT7-cY-0fv" secondAttribute="bottom" id="wT2-6z-nd7"/>
                         </constraints>
                     </view>
                     <connections>
@@ -280,7 +319,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rX-D1-WYE">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where Is My Tatto Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rX-D1-WYE">
                                 <rect key="frame" x="29" y="678" width="335" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="bwo-ff-WPy"/>

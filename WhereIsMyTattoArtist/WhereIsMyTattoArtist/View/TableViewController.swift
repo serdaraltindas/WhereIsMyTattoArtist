@@ -34,6 +34,27 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondTableVC" {
+            //let destinationVC = segue.destination as! SecondTableViewController
+            
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "toSecondTableVC", sender: self)
+    }
+    
+    
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondTableVC" {
+            if let nextViewController = segue.destination as? NextViewController {
+                    nextViewController.valueOfxyz = "XYZ" //Or pass any values
+                    nextViewController.valueOf123 = 123
+            }
+    }
+    }
+     */
     
 
 }

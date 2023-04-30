@@ -13,18 +13,20 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //
         self.navigationController?.navigationBar.tintColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
-        
+        //
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backPressed))
         navigationItem.leftBarButtonItem = backButton
-        
+        //
         let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addbuttonPressed))
         navigationItem.rightBarButtonItem = addButton
+        //
+        tableView.layer.opacity = 0.9
         
-       }
+    }
     @objc func addbuttonPressed(){
         //
     }
@@ -32,7 +34,6 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
     @objc func backPressed() {
         self.dismiss(animated: true)
     }
-
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20

@@ -11,6 +11,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         tableView.delegate = self
         tableView.dataSource = self
+        //
+        tableView.layer.opacity = 0.9
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

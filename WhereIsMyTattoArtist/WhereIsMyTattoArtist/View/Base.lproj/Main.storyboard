@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OVp-Cs-0ht">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bVh-JH-q4M">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -213,7 +213,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="BPg-8b-eqX" id="xa9-uK-rCa"/>
-                        <segue destination="EfS-lK-S4W" kind="presentation" modalPresentationStyle="fullScreen" id="6FT-LB-CgM"/>
+                        <segue destination="EfS-lK-S4W" kind="presentation" identifier="toSecondTableVC" modalPresentationStyle="fullScreen" id="6FT-LB-CgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuM-Iu-bY8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

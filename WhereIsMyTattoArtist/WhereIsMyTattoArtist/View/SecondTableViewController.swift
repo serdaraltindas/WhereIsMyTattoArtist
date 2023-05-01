@@ -24,7 +24,7 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addbuttonPressed))
         navigationItem.rightBarButtonItem = addButton
         //
-        tableView.layer.opacity = 0.9
+        tableView.layer.opacity = 0.95
         
     }
     @objc func addbuttonPressed(){

@@ -237,7 +237,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="48R-6T-Cha"/>
                                 </constraints>
-                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -251,6 +251,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                     <color key="baseBackgroundColor" systemColor="systemTealColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="cpi-we-IaR" eventType="touchUpInside" id="t4J-J0-cvZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BQd-pm-ocd"/>
@@ -269,6 +272,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bau-XC-3zV"/>
+                    <connections>
+                        <outlet property="commentTextField" destination="r0Q-zf-7yc" id="Rm3-xE-EiL"/>
+                        <outlet property="imageView" destination="zQa-RG-0JF" id="aco-2O-mjT"/>
+                        <outlet property="uploadButton" destination="dD6-xy-d3H" id="enk-t1-YuM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-vw-EKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -479,9 +487,6 @@
         <image name="background2" width="4004" height="6000"/>
         <image name="background3" width="6582" height="7500"/>
         <image name="background4" width="3266" height="4120"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

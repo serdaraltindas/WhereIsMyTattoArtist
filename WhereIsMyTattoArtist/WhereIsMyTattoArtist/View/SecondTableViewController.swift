@@ -28,7 +28,7 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     @objc func addbuttonPressed(){
-        //
+        performSegue(withIdentifier: "toUploadVC", sender: self)
     }
     
     @objc func backPressed() {

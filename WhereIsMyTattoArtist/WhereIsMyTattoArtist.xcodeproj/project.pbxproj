@@ -20,6 +20,7 @@
 		AEC3753629FAE6B100981956 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3753529FAE6B100981956 /* LogInViewController.swift */; };
 		AEC3753829FAE6F900981956 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3753729FAE6F900981956 /* SignUpViewController.swift */; };
 		AEC8DFF329FCF04A0087E0B6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC8DFF229FCF04A0087E0B6 /* CustomTableViewCell.swift */; };
+		AEEDED142A001F7100522930 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEDED132A001F7100522930 /* UploadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AEC3753529FAE6B100981956 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AEC3753729FAE6F900981956 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AEC8DFF229FCF04A0087E0B6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AEEDED132A001F7100522930 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AEC3753729FAE6F900981956 /* SignUpViewController.swift */,
 				AE7E1EE829FC626A00454569 /* TableViewController.swift */,
 				AE8B939929FE578D0006E689 /* SecondTableViewController.swift */,
+				AEEDED132A001F7100522930 /* UploadViewController.swift */,
 				AEC3752329FAD8C900981956 /* Main.storyboard */,
 			);
 			path = View;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8B939C29FE5BAC0006E689 /* SecondCustomTableViewCell.swift in Sources */,
+				AEEDED142A001F7100522930 /* UploadViewController.swift in Sources */,
 				AEC3752229FAD8C900981956 /* WelcomeViewController.swift in Sources */,
 				AE7E1EE929FC626A00454569 /* TableViewController.swift in Sources */,
 				AEC8DFF329FCF04A0087E0B6 /* CustomTableViewCell.swift in Sources */,

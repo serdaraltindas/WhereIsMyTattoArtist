@@ -79,10 +79,10 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         cell.kullaniciAdiLabel.text = emailDizisi[indexPath.row]
         cell.customImageView.sd_setImage(with: URL(string: self.gorselDizisi[indexPath.row]))
         cell.commentLabel.text = yorumDizisi[indexPath.row]
-        cell.customImageView.layer.cornerRadius = cell.customImageView.frame.size.width / 2
+        cell.customImageView.layer.cornerRadius = cell.customImageView.frame.size.width / 5
         cell.customImageView.layer.masksToBounds = true
         cell.customImageView.clipsToBounds = true
-        cell.customImageView.layer.borderWidth = 5
+        cell.customImageView.layer.borderWidth = 0
         cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
         return cell
     }

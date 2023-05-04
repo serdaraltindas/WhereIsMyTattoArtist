@@ -2,6 +2,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseStorage
 
 class UploadViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
@@ -28,7 +29,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
     }
     
     @objc func cikisYapPressed(){
-        
         do {
             try Auth.auth().signOut()
         }catch {
@@ -40,10 +40,12 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
     @objc func backPressed() {
         self.dismiss(animated: true)
     }
+    
     @objc func klavyeyiKapat(){
         //aksiyonları kapat.
         view.endEditing(true)
     }
+    
     @objc func gorselSec(){
         //kütüphane git-> pickerController
         let picker = UIImagePickerController()

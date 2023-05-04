@@ -66,6 +66,51 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     @IBAction func uploadButtonClicked(_ sender: UIButton) {
         
+        let storage = Storage.storage()
+        let storageReferance = storage.reference()
+        let mediaFolder = storageReferance.child("Media")
+        if let data = imageView.image?.jpegData(compressionQuality: 0.5 ) {
+            
+            let uuid = UUID().uuidString
+            
+            let imageReferance = mediaFolder.child("\(uuid).jpg")
+            imageReferance.putData(data) { (StorageMetadata , error) in
+                if error != nil {
+                    //hata mesajı
+                    self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
+                }else{
+                    imageReferance.downloadURL { (url, error) in
+                        if error == nil {
+                            let imageUrl = url?.absoluteString
+                            
+                            if let imageUrl = imageUrl {
+                                
+                                let firestoreDatabase = Firestore.firestore()
+                                let firestorePost = ["gorselurl" : imageUrl , "yorum" : self.commentTextField.text! , "email" : Auth.auth().currentUser?.email as Any, "tarih" : FieldValue.serverTimestamp()] as [String : Any]
+                                firestoreDatabase.collection("Posted").addDocument(data: firestorePost) {
+                                    (error) in
+                                    if error != nil {
+                                        self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
+                                    }else{
+                                        self.imageView.image = UIImage()
+                                        self.commentTextField.text = ""
+                                        self.performSegue(withIdentifier: "toSecondVC"  , sender: self)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
     }
+    
+    func hataMesajı(title : String , message : String){
+            let alertMessage = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+            alertMessage.addAction(okButton)
+            self.present(alertMessage, animated: true)
+        }
 }
 

@@ -16,6 +16,7 @@
 		AE7E1EEB29FC683200454569 /* IstanbulArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E1EEA29FC683200454569 /* IstanbulArea.swift */; };
 		AE8B939A29FE578D0006E689 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8B939929FE578D0006E689 /* SecondTableViewController.swift */; };
 		AE8B939C29FE5BAC0006E689 /* SecondCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8B939B29FE5BAC0006E689 /* SecondCustomTableViewCell.swift */; };
+		AEA6D6EE2A045D7600611B8A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AEA6D6ED2A045D7600611B8A /* SDWebImage */; };
 		AEC3751E29FAD8C900981956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751D29FAD8C900981956 /* AppDelegate.swift */; };
 		AEC3752029FAD8C900981956 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3751F29FAD8C900981956 /* SceneDelegate.swift */; };
 		AEC3752229FAD8C900981956 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC3752129FAD8C900981956 /* WelcomeViewController.swift */; };
@@ -57,6 +58,7 @@
 				AE44B1132A0264A200113A3B /* FirebaseStorage in Frameworks */,
 				AE44B10D2A0264A200113A3B /* FirebaseAuth in Frameworks */,
 				AE44B1112A0264A200113A3B /* FirebaseFirestore in Frameworks */,
+				AEA6D6EE2A045D7600611B8A /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,7 @@
 				AE44B10E2A0264A200113A3B /* FirebaseDatabase */,
 				AE44B1102A0264A200113A3B /* FirebaseFirestore */,
 				AE44B1122A0264A200113A3B /* FirebaseStorage */,
+				AEA6D6ED2A045D7600611B8A /* SDWebImage */,
 			);
 			productName = WhereIsMyTattoArtist;
 			productReference = AEC3751A29FAD8C900981956 /* WhereIsMyTattoArtist.app */;
@@ -194,6 +197,7 @@
 			mainGroup = AEC3751129FAD8C900981956;
 			packageReferences = (
 				AE44B10B2A0264A200113A3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AEA6D6EC2A045D7600611B8A /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = AEC3751B29FAD8C900981956 /* Products */;
 			projectDirPath = "";
@@ -461,6 +465,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		AEA6D6EC2A045D7600611B8A /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -483,6 +495,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE44B10B2A0264A200113A3B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		AEA6D6ED2A045D7600611B8A /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEA6D6EC2A045D7600611B8A /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -228,14 +228,14 @@
             <objects>
                 <viewController id="cpi-we-IaR" customClass="UploadViewController" customModule="WhereIsMyTattoArtist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hae-oL-fsA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="zQa-RG-0JF">
-                                <rect key="frame" x="52" y="70" width="289" height="458"/>
+                                <rect key="frame" x="52" y="26" width="289" height="492"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yorum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-zf-7yc">
-                                <rect key="frame" x="20" y="545" width="353" height="34"/>
+                                <rect key="frame" x="20" y="535" width="353" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Aav-NC-Nq3"/>
                                 </constraints>
@@ -244,7 +244,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-xy-d3H">
-                                <rect key="frame" x="20" y="596" width="353" height="65"/>
+                                <rect key="frame" x="20" y="586" width="353" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="ew3-EL-pB5"/>
                                 </constraints>
@@ -279,6 +279,7 @@
                         <outlet property="imageView" destination="zQa-RG-0JF" id="aco-2O-mjT"/>
                         <outlet property="uploadButton" destination="dD6-xy-d3H" id="enk-t1-YuM"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMainVC" modalPresentationStyle="fullScreen" id="4P0-Jp-A6G"/>
+                        <segue destination="YWu-X2-BX9" kind="presentation" identifier="toSecondVC" modalPresentationStyle="fullScreen" id="wfS-Uh-1th"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-vw-EKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -485,6 +486,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FB2-oe-vPI"/>
+        <segue reference="wfS-Uh-1th"/>
         <segue reference="4P0-Jp-A6G"/>
     </inferredMetricsTieBreakers>
     <resources>

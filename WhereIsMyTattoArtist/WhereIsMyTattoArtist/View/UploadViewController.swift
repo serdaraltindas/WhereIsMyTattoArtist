@@ -101,16 +101,15 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
                         }
                     }
                 }
-                
             }
         }
     }
     
     func hataMesajı(title : String , message : String){
-            let alertMessage = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-            let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
-            alertMessage.addAction(okButton)
-            self.present(alertMessage, animated: true)
-        }
+        let alertMessage = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alertMessage.addAction(okButton)
+        self.present(alertMessage, animated: true)
+    }
 }
 

@@ -1,9 +1,4 @@
-//
-//  SecondTableViewController.swift
-//  WhereIsMyTattoArtist
-//
-//  Created by Serdar Altındaş on 30.04.2023.
-//
+
 
 import UIKit
 import Firebase
@@ -36,10 +31,10 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         firebaseVerileriAl()
     }
     func firebaseVerileriAl() {
-            let firestoreDatabase = Firestore.firestore()
-            //descanding -> yeni atılan en üstte
-            firestoreDatabase.collection("Posted").order(by: "tarih", descending: true)
-                .addSnapshotListener { (snapshot, error) in
+        let firestoreDatabase = Firestore.firestore()
+        //descanding -> yeni atılan en üstte
+        firestoreDatabase.collection("Posted").order(by: "tarih", descending: true)
+            .addSnapshotListener { (snapshot, error) in
                 if error != nil {
                     self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
                 }else{
@@ -66,8 +61,7 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
                     }
                 }
             }
-        }
-    
+    }
     @objc func addbuttonPressed(){
         performSegue(withIdentifier: "toUploadVC", sender: self)
     }
@@ -101,10 +95,10 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         return "Tatto İstanbul"
     }
     func hataMesajı(title : String , message : String) {
-          let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-          let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
-          alert.addAction(okButton)
-          present(alert, animated: true)
-      }
-
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        present(alert, animated: true)
+    }
+    
 }

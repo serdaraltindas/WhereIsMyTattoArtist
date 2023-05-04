@@ -1,14 +1,14 @@
 import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     let newArea = IstanbulArea().data
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         //
@@ -49,14 +49,13 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toSecondTableVC" {
-            if let nextViewController = segue.destination as? NextViewController {
-                    nextViewController.valueOfxyz = "XYZ" //Or pass any values
-                    nextViewController.valueOf123 = 123
-            }
-    }
-    }
+     if segue.identifier == "toSecondTableVC" {
+     if let nextViewController = segue.destination as? NextViewController {
+     nextViewController.valueOfxyz = "XYZ" //Or pass any values
+     nextViewController.valueOf123 = 123
+     }
+     }
+     }
      */
     
-
 }

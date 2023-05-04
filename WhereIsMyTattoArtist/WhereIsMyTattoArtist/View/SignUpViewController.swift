@@ -53,7 +53,7 @@ class SignUpViewController: UIViewController {
                 if error != nil {
                     self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
                 }else{
-                    self.performSegue(withIdentifier: "toSignUpVC", sender: self)
+                    self.performSegue(withIdentifier: "signUpToTableView", sender: self)
                 }
             }
         } else {

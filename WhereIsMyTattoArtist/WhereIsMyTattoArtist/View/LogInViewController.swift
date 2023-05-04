@@ -50,7 +50,6 @@ class LogInViewController: UIViewController {
     // }
     
     @IBAction func logInButtonClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "logInToTableView", sender: self)
         
         if emailTextField.text != "" && passwordTextField.text != "" {
             Auth.auth().signIn(withEmail: emailTextField.text! , password: passwordTextField.text!) { (authdataresult, error) in

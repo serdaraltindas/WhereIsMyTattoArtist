@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -258,35 +257,19 @@
                                     <action selector="uploadButtonClicked:" destination="cpi-we-IaR" eventType="touchUpInside" id="t4J-J0-cvZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gg2-to-wVC">
-                                <rect key="frame" x="16" y="736" width="361" height="50"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Ayarlar">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Xw4-gR-D73" kind="show" identifier="toSettingsVC" id="qBm-X6-3ih"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BQd-pm-ocd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zQa-RG-0JF" firstAttribute="top" secondItem="BQd-pm-ocd" secondAttribute="top" constant="26" id="8LR-ht-wNG"/>
-                            <constraint firstItem="Gg2-to-wVC" firstAttribute="leading" secondItem="hae-oL-fsA" secondAttribute="leadingMargin" id="BTC-5l-nGv"/>
                             <constraint firstItem="dD6-xy-d3H" firstAttribute="top" secondItem="r0Q-zf-7yc" secondAttribute="bottom" constant="17" id="DIt-q6-lmW"/>
                             <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="dD6-xy-d3H" secondAttribute="leading" id="G4h-C5-KsE"/>
                             <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="20" id="GA4-3W-26k"/>
                             <constraint firstItem="BQd-pm-ocd" firstAttribute="bottom" secondItem="dD6-xy-d3H" secondAttribute="bottom" constant="191" id="W8D-Bj-NRd"/>
                             <constraint firstItem="r0Q-zf-7yc" firstAttribute="top" secondItem="zQa-RG-0JF" secondAttribute="bottom" constant="17" id="Xdd-tQ-p1r"/>
                             <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="hae-oL-fsA" secondAttribute="centerX" id="Y0l-nd-fOq"/>
-                            <constraint firstItem="Gg2-to-wVC" firstAttribute="top" secondItem="dD6-xy-d3H" secondAttribute="bottom" constant="75" id="gHB-l9-5Hy"/>
                             <constraint firstItem="r0Q-zf-7yc" firstAttribute="trailing" secondItem="dD6-xy-d3H" secondAttribute="trailing" id="lES-gP-vJE"/>
-                            <constraint firstItem="BQd-pm-ocd" firstAttribute="bottom" secondItem="Gg2-to-wVC" secondAttribute="bottom" constant="66" id="m0X-h3-MT2"/>
                             <constraint firstItem="zQa-RG-0JF" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="52" id="qfN-AI-PRb"/>
-                            <constraint firstItem="Gg2-to-wVC" firstAttribute="centerX" secondItem="dD6-xy-d3H" secondAttribute="centerX" id="w3e-Ys-nE9"/>
                             <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="r0Q-zf-7yc" secondAttribute="centerX" id="w5v-ca-a35"/>
                         </constraints>
                     </view>
@@ -295,47 +278,11 @@
                         <outlet property="commentTextField" destination="r0Q-zf-7yc" id="Rm3-xE-EiL"/>
                         <outlet property="imageView" destination="zQa-RG-0JF" id="aco-2O-mjT"/>
                         <outlet property="uploadButton" destination="dD6-xy-d3H" id="enk-t1-YuM"/>
-                        <segue destination="Xw4-gR-D73" kind="show" id="mhb-qV-ozz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-vw-EKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6652.6717557251905" y="-38.028169014084511"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="jRw-oN-Q5e">
-            <objects>
-                <viewController id="Xw4-gR-D73" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lti-DG-uGx">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-B0-5Lr">
-                                <rect key="frame" x="110" y="394" width="173" height="63"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Çıkış Yap" imagePadding="5" cornerStyle="capsule">
-                                    <imageReference key="image" image="gearshape.fill" catalog="system" symbolScale="large" variableValue="0.0"/>
-                                    <backgroundConfiguration key="background" strokeWidth="5" strokeOutset="5">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" systemColor="systemTealColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ijg-CD-aYx"/>
-                        <constraints>
-                            <constraint firstItem="OKL-B0-5Lr" firstAttribute="top" secondItem="ijg-CD-aYx" secondAttribute="top" constant="350" id="Awo-ck-5Xg"/>
-                            <constraint firstItem="OKL-B0-5Lr" firstAttribute="leading" secondItem="ijg-CD-aYx" secondAttribute="leading" constant="110" id="ERr-5y-5ge"/>
-                            <constraint firstItem="OKL-B0-5Lr" firstAttribute="centerX" secondItem="Lti-DG-uGx" secondAttribute="centerX" id="axR-x8-b60"/>
-                            <constraint firstItem="OKL-B0-5Lr" firstAttribute="centerY" secondItem="Lti-DG-uGx" secondAttribute="centerY" id="rzd-il-LK5"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="l5N-vi-OpO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bqq-tU-0fv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7562.5954198473282" y="-38.028169014084511"/>
         </scene>
         <!--Second Table View Controller-->
         <scene sceneID="43J-9A-SXc">
@@ -501,7 +448,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zFL-PT-52a">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1pK-Ub-hWd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="tabBar" automaticallyAdjustsScrollViewInsets="NO" id="1pK-Ub-hWd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PWO-Zv-fPK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
@@ -537,7 +484,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FB2-oe-vPI"/>
-        <segue reference="qBm-X6-3ih"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="3500" height="5881"/>
@@ -545,15 +491,11 @@
         <image name="background2" width="4004" height="6000"/>
         <image name="background3" width="6582" height="7500"/>
         <image name="background4" width="3266" height="4120"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

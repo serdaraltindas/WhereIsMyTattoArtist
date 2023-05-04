@@ -40,7 +40,7 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SecondCustomTableViewCell
-        cell.kullaniciAdiLabel.text = "Zeynep"
+        cell.kullaniciAdiLabel.text = "Test"
         cell.customImageView.image = UIImage(named: "background2")
         cell.commentLabel.text = "Test"
         cell.customImageView.layer.cornerRadius = cell.customImageView.frame.size.width / 2

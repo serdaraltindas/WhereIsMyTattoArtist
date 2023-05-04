@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="rtl-4b-LNy">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="-34" width="393" height="920"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-QM-EPr">
-                                <rect key="frame" x="16" y="714" width="361" height="68"/>
+                                <rect key="frame" x="16" y="748" width="361" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="SBF-nx-Ltf"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZv-K5-HAO">
-                                <rect key="frame" x="16" y="638" width="361" height="68"/>
+                                <rect key="frame" x="16" y="672" width="361" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="1cV-lu-NxT"/>
                                 </constraints>
@@ -87,14 +87,14 @@
             <objects>
                 <viewController id="9T1-6g-fTg" customClass="SignUpViewController" customModule="WhereIsMyTattoArtist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dbe-3x-Gmq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background4" translatesAutoresizingMaskIntoConstraints="NO" id="Oks-dH-rQ1">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="-34" width="393" height="910"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-cD-4SN">
-                                <rect key="frame" x="16" y="281" width="361" height="68"/>
+                                <rect key="frame" x="16" y="178" width="361" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="kue-88-q9C"/>
                                 </constraints>
@@ -114,13 +114,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8d-Jp-sQH">
-                                <rect key="frame" x="16" y="181" width="361" height="34"/>
+                                <rect key="frame" x="16" y="78" width="361" height="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrg-u6-ozz">
-                                <rect key="frame" x="16" y="139" width="361" height="34"/>
+                                <rect key="frame" x="16" y="36" width="361" height="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -278,6 +278,7 @@
                         <outlet property="commentTextField" destination="r0Q-zf-7yc" id="Rm3-xE-EiL"/>
                         <outlet property="imageView" destination="zQa-RG-0JF" id="aco-2O-mjT"/>
                         <outlet property="uploadButton" destination="dD6-xy-d3H" id="enk-t1-YuM"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMainVC" modalPresentationStyle="fullScreen" id="4P0-Jp-A6G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfQ-vw-EKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -360,14 +361,14 @@
             <objects>
                 <viewController id="Rxh-uF-blv" customClass="LogInViewController" customModule="WhereIsMyTattoArtist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wrn-76-btg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ynv-2k-TlD">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="-34" width="393" height="910"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8di-U8-9ow">
-                                <rect key="frame" x="16" y="281" width="361" height="68"/>
+                                <rect key="frame" x="16" y="178" width="361" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="EDV-Pe-eyy"/>
                                 </constraints>
@@ -386,13 +387,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SW9-MY-De6">
-                                <rect key="frame" x="16" y="181" width="361" height="34"/>
+                                <rect key="frame" x="16" y="78" width="361" height="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4v-nb-Xef">
-                                <rect key="frame" x="16" y="139" width="361" height="34"/>
+                                <rect key="frame" x="16" y="36" width="361" height="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -484,6 +485,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="FB2-oe-vPI"/>
+        <segue reference="4P0-Jp-A6G"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="background" width="3500" height="5881"/>

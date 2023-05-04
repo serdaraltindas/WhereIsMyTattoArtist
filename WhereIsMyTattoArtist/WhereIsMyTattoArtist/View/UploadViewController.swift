@@ -19,17 +19,24 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backPressed))
         navigationItem.leftBarButtonItem = backButton
         //Çıkış Yap
-        let cikisYapButton = UIBarButtonItem(title: "Çıkış Yap", style: UIBarButtonItem.Style.plain, target: self, action: #selector(cikisYapPressed))
+        let cikisYapButton = UIBarButtonItem(title: "Log Out", style: UIBarButtonItem.Style.plain, target: self, action: #selector(cikisYapPressed))
         navigationItem.rightBarButtonItem = cikisYapButton
         //ImageView
         imageView.isUserInteractionEnabled = true
         let imageGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(gorselSec))
         imageView.addGestureRecognizer(imageGestureRecognizer)
     }
+    
     @objc func cikisYapPressed(){
-      
+        
+        do {
+            try Auth.auth().signOut()
+        }catch {
+            print("Hata!")
+        }
+        performSegue(withIdentifier: "toMainVC", sender: self)
     }
- 
+    
     @objc func backPressed() {
         self.dismiss(animated: true)
     }

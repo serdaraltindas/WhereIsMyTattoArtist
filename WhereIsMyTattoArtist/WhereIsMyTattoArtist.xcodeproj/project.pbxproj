@@ -82,10 +82,10 @@
 		AEC3751C29FAD8C900981956 /* WhereIsMyTattoArtist */ = {
 			isa = PBXGroup;
 			children = (
+				AEC3753129FAD8D700981956 /* Delegate */,
 				AEC8DFF129FCF0220087E0B6 /* CustomView */,
 				AEC3753429FAD90A00981956 /* ViewModel */,
 				AEC3753329FAD90500981956 /* Model */,
-				AEC3753129FAD8D700981956 /* Delegate */,
 				AEC3753229FAD8E200981956 /* View */,
 				AEC3752629FAD8CA00981956 /* Assets.xcassets */,
 				AEC3752829FAD8CA00981956 /* LaunchScreen.storyboard */,

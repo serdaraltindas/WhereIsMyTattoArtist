@@ -1,8 +1,12 @@
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +52,25 @@ class LogInViewController: UIViewController {
     @IBAction func logInButtonClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "logInToTableView", sender: self)
         
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            Auth.auth().signIn(withEmail: emailTextField.text! , password: passwordTextField.text!) { (authdataresult, error) in
+                if error != nil {
+                    //hata mesajı
+                    self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
+                }else {
+                    self.performSegue(withIdentifier: "logInToTableView", sender: self)
+                }
+            }
+        }else {
+            self.hataMesajı(title: "Hata!", message:"Email veya parola hatalı, tekrar deneyiniz!")
+        }
+    }
+    
+    func hataMesajı(title : String, message : String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alert.addAction(okButton)
+        present(alert, animated: true)
     }
     
 }

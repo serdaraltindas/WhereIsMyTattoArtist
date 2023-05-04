@@ -1,8 +1,12 @@
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +47,26 @@ class SignUpViewController: UIViewController {
     //     context.stroke(rect.insetBy(dx: 10, dy: 10))
     // }
     //}
-    
     @IBAction func signUpButtonClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "signUpToTableView", sender: self)
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authdataresult, error) in
+                if error != nil {
+                    self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
+                }else{
+                    self.performSegue(withIdentifier: "toSignUpVC", sender: self)
+                }
+            }
+        } else {
+            //error!
+            hataMesajı(title: "Hata!", message: "Email veya parola hatalı, tekrar deneyiniz!")
+        }
+    }
+    //alert message
+    func hataMesajı(title : String , message : String){
+        let alertMessage = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default)
+        alertMessage.addAction(okButton)
+        self.present(alertMessage, animated: true)
     }
     
 }

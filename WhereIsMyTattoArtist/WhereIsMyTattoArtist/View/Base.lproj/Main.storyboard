@@ -231,22 +231,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="zQa-RG-0JF">
-                                <rect key="frame" x="52" y="26" width="289" height="492"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yorum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-zf-7yc">
-                                <rect key="frame" x="20" y="535" width="353" height="34"/>
+                                <rect key="frame" x="20" y="619" width="353" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Aav-NC-Nq3"/>
+                                    <constraint firstAttribute="height" constant="34" id="Gnv-sJ-Sds"/>
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD6-xy-d3H">
-                                <rect key="frame" x="20" y="586" width="353" height="65"/>
+                                <rect key="frame" x="20" y="661" width="353" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="ew3-EL-pB5"/>
+                                    <constraint firstAttribute="height" constant="65" id="BFS-uI-9a4"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Yükle">
@@ -258,20 +255,27 @@
                                     <action selector="uploadButtonClicked:" destination="cpi-we-IaR" eventType="touchUpInside" id="t4J-J0-cvZ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="soruisareti" translatesAutoresizingMaskIntoConstraints="NO" id="zQa-RG-0JF">
+                                <rect key="frame" x="50" y="83" width="292" height="509"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="509" id="AWw-b9-GAo"/>
+                                    <constraint firstAttribute="width" constant="292" id="N9R-nL-2is"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BQd-pm-ocd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zQa-RG-0JF" firstAttribute="top" secondItem="BQd-pm-ocd" secondAttribute="top" constant="26" id="8LR-ht-wNG"/>
-                            <constraint firstItem="dD6-xy-d3H" firstAttribute="top" secondItem="r0Q-zf-7yc" secondAttribute="bottom" constant="17" id="DIt-q6-lmW"/>
-                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="dD6-xy-d3H" secondAttribute="leading" id="G4h-C5-KsE"/>
-                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="20" id="GA4-3W-26k"/>
-                            <constraint firstItem="BQd-pm-ocd" firstAttribute="bottom" secondItem="dD6-xy-d3H" secondAttribute="bottom" constant="191" id="W8D-Bj-NRd"/>
-                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="top" secondItem="zQa-RG-0JF" secondAttribute="bottom" constant="17" id="Xdd-tQ-p1r"/>
-                            <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="hae-oL-fsA" secondAttribute="centerX" id="Y0l-nd-fOq"/>
-                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="trailing" secondItem="dD6-xy-d3H" secondAttribute="trailing" id="lES-gP-vJE"/>
-                            <constraint firstItem="zQa-RG-0JF" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="52" id="qfN-AI-PRb"/>
-                            <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="r0Q-zf-7yc" secondAttribute="centerX" id="w5v-ca-a35"/>
+                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="top" secondItem="zQa-RG-0JF" secondAttribute="bottom" constant="27" id="2dy-Ct-M5a"/>
+                            <constraint firstItem="BQd-pm-ocd" firstAttribute="bottom" secondItem="dD6-xy-d3H" secondAttribute="bottom" constant="116" id="DAz-K3-Kak"/>
+                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="dD6-xy-d3H" secondAttribute="leading" id="Dao-mD-mPO"/>
+                            <constraint firstItem="dD6-xy-d3H" firstAttribute="top" secondItem="r0Q-zf-7yc" secondAttribute="bottom" constant="8" id="Hsx-Bc-62K"/>
+                            <constraint firstItem="zQa-RG-0JF" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="50" id="HxY-iq-G0p"/>
+                            <constraint firstItem="zQa-RG-0JF" firstAttribute="top" secondItem="BQd-pm-ocd" secondAttribute="top" constant="83" id="MRc-LS-zYK"/>
+                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="trailing" secondItem="dD6-xy-d3H" secondAttribute="trailing" id="Y1d-7J-DZI"/>
+                            <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="r0Q-zf-7yc" secondAttribute="centerX" id="diF-io-ANF"/>
+                            <constraint firstItem="r0Q-zf-7yc" firstAttribute="leading" secondItem="BQd-pm-ocd" secondAttribute="leading" constant="20" id="f84-hY-szc"/>
+                            <constraint firstItem="zQa-RG-0JF" firstAttribute="centerX" secondItem="hae-oL-fsA" secondAttribute="centerX" id="oaH-fX-V2F"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bau-XC-3zV"/>
@@ -292,14 +296,14 @@
             <objects>
                 <viewController id="YWu-X2-BX9" customClass="SecondTableViewController" customModule="WhereIsMyTattoArtist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iL8-c5-8Zr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="Jj4-ul-ljF">
-                                <rect key="frame" x="0.0" y="-12" width="393" height="854"/>
+                                <rect key="frame" x="0.0" y="-56" width="393" height="888"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-2e-9AM">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="629" id="1Af-0d-NGd" customClass="SecondCustomTableViewCell" customModule="WhereIsMyTattoArtist" customModuleProvider="target">
@@ -516,9 +520,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0gS-RC-Y7l"/>
         <segue reference="FB2-oe-vPI"/>
-        <segue reference="Fvy-36-R6t"/>
+        <segue reference="wfS-Uh-1th"/>
         <segue reference="4P0-Jp-A6G"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -528,6 +531,7 @@
         <image name="background3" width="6582" height="7500"/>
         <image name="background4" width="3266" height="4120"/>
         <image name="logo5" width="1024" height="1024"/>
+        <image name="soruisareti" width="850" height="1511"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -13,6 +13,8 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
     var yorumDizisi = [String]()
     var gorselDizisi = [String]()
     
+    @IBOutlet weak var commentTextLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //
@@ -26,9 +28,8 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.add, target: self, action: #selector(addbuttonPressed))
         navigationItem.rightBarButtonItem = addButton
         //
-        tableView.layer.opacity = 0.95
-        
         firebaseVerileriAl()
+        
     }
     func firebaseVerileriAl() {
         let firestoreDatabase = Firestore.firestore()
@@ -76,14 +77,23 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SecondCustomTableViewCell
+        
         cell.kullaniciAdiLabel.text = emailDizisi[indexPath.row]
         cell.customImageView.sd_setImage(with: URL(string: self.gorselDizisi[indexPath.row]))
         cell.commentLabel.text = yorumDizisi[indexPath.row]
+        
         cell.customImageView.layer.cornerRadius = cell.customImageView.frame.size.width / 4
         cell.customImageView.layer.masksToBounds = true
         cell.customImageView.clipsToBounds = true
         cell.customImageView.layer.borderWidth = 8
         cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
+        
+        cell.secondCustomImageView.layer.cornerRadius = cell.secondCustomImageView.frame.size.width / 5
+        cell.secondCustomImageView.layer.masksToBounds = true
+        cell.secondCustomImageView.clipsToBounds = true
+        cell.secondCustomImageView.layer.borderWidth = 5
+        cell.secondCustomImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
+        
         return cell
     }
     

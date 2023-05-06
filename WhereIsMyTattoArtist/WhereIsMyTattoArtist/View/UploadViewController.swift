@@ -58,7 +58,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate & 
     
     @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         //medya seçimi bitti.
-        imageView.image = info[.originalImage] as? UIImage
+        imageView.image = info[.editedImage] as? UIImage
         //açılan galeriyi kapat.
         uploadButton.isEnabled = true
         self.dismiss(animated: true)

@@ -11,7 +11,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         tableView.delegate = self
         tableView.dataSource = self
-        //
         tableView.layer.opacity = 0.9
         
     }
@@ -39,15 +38,11 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toSecondTableVC" {
             //let destinationVC = segue.destination as! SecondTableViewController
-            
         }
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         performSegue(withIdentifier: "toSecondTableVC", sender: self)
     }
-    
-    
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
      if segue.identifier == "toSecondTableVC" {
      if let nextViewController = segue.destination as? NextViewController {

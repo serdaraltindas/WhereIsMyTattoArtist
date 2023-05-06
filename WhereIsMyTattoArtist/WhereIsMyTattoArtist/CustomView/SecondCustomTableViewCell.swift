@@ -9,6 +9,7 @@ import UIKit
 
 class SecondCustomTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var secondCustomImageView: UIImageView!
     @IBOutlet weak var kullaniciAdiLabel: UILabel!
     @IBOutlet weak var customImageView: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!

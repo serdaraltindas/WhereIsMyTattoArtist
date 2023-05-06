@@ -83,7 +83,7 @@ class SecondTableViewController: UIViewController, UITableViewDelegate, UITableV
         cell.customImageView.layer.masksToBounds = true
         cell.customImageView.clipsToBounds = true
         cell.customImageView.layer.borderWidth = 8
-        cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 0.5).cgColor
+        cell.customImageView.layer.borderColor = UIColor(white: 1, alpha: 1).cgColor
         return cell
     }
     

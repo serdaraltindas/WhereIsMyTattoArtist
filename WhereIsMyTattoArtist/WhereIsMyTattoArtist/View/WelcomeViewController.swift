@@ -42,7 +42,7 @@ class WelcomeViewController: UIViewController {
     // context.setLineWidth(5)
     //context.stroke(rect.insetBy(dx: 10, dy: 10))
     //}
-    // }
+    //}
     
     //Button
     @IBAction func girisYapButton(_ sender: UIButton) {
